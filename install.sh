@@ -1,0 +1,1 @@
+gcc -ldl -fPIC -shared -D_GNU_SOURCE -o example/trail.so trail/io/io.c trail/http/get/get.c trail/http/post/post.c
