@@ -22,6 +22,26 @@ Sending POST requests
   * Sending GET request ```requests_get(int port, char *website, char *directory);``` Parameters: (port, website, directory)
   * Sending POST request ```requests_post(int port, char *website, char *directory, char *post_data);``` Parameters: (port, website, directory, data)
 
+## Example
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include "../includes/trail/trail.h"
+
+
+/*
+    *    example/main.c
+    *    Date: 12/6/21
+    *    Author: 0x1CA3
+*/
+
+
+int main(void) {
+    requests_get(80, "example.com", NULL);
+    return EXIT_SUCCESS;
+}
+```
+
 ## Setup & Installation
 ```
 Steps for compiling & running:
